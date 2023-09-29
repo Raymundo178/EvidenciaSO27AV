@@ -1,0 +1,29 @@
+ssh bandit25@bandit.labs.overthewire.org -p 2220
+
+You can find bandit26 user default shell location in /etc/passwd
+
+cat /etc/passwd | grep bandit26
+
+bandit26:x:11026:11026:bandit level 26:/home/bandit26:/usr/bin/showtext
+
+bandit26's shell is at /usr/bin/showtext which is not the usual case.
+
+cat /usr/bin/showtext
+#!/bin/sh
+
+export TERM=linux
+
+exec more ~/text.txt
+exit 0
+
+
+bandit25@bandit:~$ ssh -i sshkey.private bandit26@bandit.labs.overthewire.org -p 2220
+
+This will give us an error: Could not create directory '/home/bandit25/.ssh' (Permission denied).
+
+bandit25@bandit:~$ cp ssh.private /tmp/yYyYea
+cd /tmp/yYyY
+mkdir -p .ssh
+bandit25@bandit:/tmp/yYyYea$ ssh -i sshkey.private bandit26@bandit.labs.overthewire.org -p 2220
+
+c7GvcKlw9mC7aUQaPx7nwFstuAIBw1o1

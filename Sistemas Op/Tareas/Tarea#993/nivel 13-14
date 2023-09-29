@@ -1,0 +1,115 @@
+ ssh bandit13@bandit.labs.overthewire.org -p 2220
+
+bandit13@bandit:~$ cd /etc/bandit_pass/
+bandit13@bandit:/etc/bandit_pass$ ls -al
+total 152
+drwxr-xr-x   2 root     root      4096 Apr 23 18:04 .
+drwxr-xr-x 108 root     root     12288 Aug 12 08:42 ..
+-r--------   1 bandit0  bandit0      8 Apr 23 18:04 bandit0
+-r--------   1 bandit1  bandit1     33 Apr 23 18:04 bandit1
+-r--------   1 bandit10 bandit10    33 Apr 23 18:04 bandit10
+-r--------   1 bandit11 bandit11    33 Apr 23 18:04 bandit11
+-r--------   1 bandit12 bandit12    33 Apr 23 18:04 bandit12
+-r--------   1 bandit13 bandit13    33 Apr 23 18:04 bandit13
+-r--------   1 bandit14 bandit14    33 Apr 23 18:04 bandit14
+-r--------   1 bandit15 bandit15    33 Apr 23 18:04 bandit15
+-r--------   1 bandit16 bandit16    33 Apr 23 18:04 bandit16
+-r--------   1 bandit17 bandit17    33 Apr 23 18:04 bandit17
+-r--------   1 bandit18 bandit18    33 Apr 23 18:04 bandit18
+-r--------   1 bandit19 bandit19    33 Apr 23 18:04 bandit19
+-r--------   1 bandit2  bandit2     33 Apr 23 18:04 bandit2
+-r--------   1 bandit20 bandit20    33 Apr 23 18:04 bandit20
+-r--------   1 bandit21 bandit21    33 Apr 23 18:04 bandit21
+-r--------   1 bandit22 bandit22    33 Apr 23 18:04 bandit22
+-r--------   1 bandit23 bandit23    33 Apr 23 18:04 bandit23
+-r--------   1 bandit24 bandit24    33 Apr 23 18:04 bandit24
+-r--------   1 bandit25 bandit25    33 Apr 23 18:04 bandit25
+-r--------   1 bandit26 bandit26    33 Apr 23 18:04 bandit26
+-r--------   1 bandit27 bandit27    33 Apr 23 18:04 bandit27
+-r--------   1 bandit28 bandit28    33 Apr 23 18:04 bandit28
+-r--------   1 bandit29 bandit29    33 Apr 23 18:04 bandit29
+-r--------   1 bandit3  bandit3     33 Apr 23 18:04 bandit3
+-r--------   1 bandit30 bandit30    33 Apr 23 18:04 bandit30
+-r--------   1 bandit31 bandit31    33 Apr 23 18:04 bandit31
+-r--------   1 bandit32 bandit32    33 Apr 23 18:04 bandit32
+-r--------   1 bandit33 bandit33    33 Apr 23 18:04 bandit33
+-r--------   1 bandit4  bandit4     33 Apr 23 18:04 bandit4
+-r--------   1 bandit5  bandit5     33 Apr 23 18:04 bandit5
+-r--------   1 bandit6  bandit6     33 Apr 23 18:04 bandit6
+-r--------   1 bandit7  bandit7     33 Apr 23 18:04 bandit7
+-r--------   1 bandit8  bandit8     33 Apr 23 18:04 bandit8
+-r--------   1 bandit9  bandit9     33 Apr 23 18:04 bandit9
+bandit13@bandit:/etc/bandit_pass$ cat bandit14
+cat: bandit14: Permission denied
+bandit13@bandit:~$ cd -
+bandit13@bandit:~$ ls
+sshkey.private
+bandit13@bandit:~$ cat sshkey.private
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAxkkOE83W2cOT7IWhFc9aPaaQmQDdgzuXCv+ppZHa++buSkN+
+gg0tcr7Fw8NLGa5+Uzec2rEg0WmeevB13AIoYp0MZyETq46t+jk9puNwZwIt9XgB
+ZufGtZEwWbFWw/vVLNwOXBe4UWStGRWzgPpEeSv5Tb1VjLZIBdGphTIK22Amz6Zb
+ThMsiMnyJafEwJ/T8PQO3myS91vUHEuoOMAzoUID4kN0MEZ3+XahyK0HJVq68KsV
+ObefXG1vvA3GAJ29kxJaqvRfgYnqZryWN7w3CHjNU4c/2Jkp+n8L0SnxaNA+WYA7
+jiPyTF0is8uzMlYQ4l1Lzh/8/MpvhCQF8r22dwIDAQABAoIBAQC6dWBjhyEOzjeA
+J3j/RWmap9M5zfJ/wb2bfidNpwbB8rsJ4sZIDZQ7XuIh4LfygoAQSS+bBw3RXvzE
+pvJt3SmU8hIDuLsCjL1VnBY5pY7Bju8g8aR/3FyjyNAqx/TLfzlLYfOu7i9Jet67
+xAh0tONG/u8FB5I3LAI2Vp6OviwvdWeC4nOxCthldpuPKNLA8rmMMVRTKQ+7T2VS
+nXmwYckKUcUgzoVSpiNZaS0zUDypdpy2+tRH3MQa5kqN1YKjvF8RC47woOYCktsD
+o3FFpGNFec9Taa3Msy+DfQQhHKZFKIL3bJDONtmrVvtYK40/yeU4aZ/HA2DQzwhe
+ol1AfiEhAoGBAOnVjosBkm7sblK+n4IEwPxs8sOmhPnTDUy5WGrpSCrXOmsVIBUf
+laL3ZGLx3xCIwtCnEucB9DvN2HZkupc/h6hTKUYLqXuyLD8njTrbRhLgbC9QrKrS
+M1F2fSTxVqPtZDlDMwjNR04xHA/fKh8bXXyTMqOHNJTHHNhbh3McdURjAoGBANkU
+1hqfnw7+aXncJ9bjysr1ZWbqOE5Nd8AFgfwaKuGTTVX2NsUQnCMWdOp+wFak40JH
+PKWkJNdBG+ex0H9JNQsTK3X5PBMAS8AfX0GrKeuwKWA6erytVTqjOfLYcdp5+z9s
+8DtVCxDuVsM+i4X8UqIGOlvGbtKEVokHPFXP1q/dAoGAcHg5YX7WEehCgCYTzpO+
+xysX8ScM2qS6xuZ3MqUWAxUWkh7NGZvhe0sGy9iOdANzwKw7mUUFViaCMR/t54W1
+GC83sOs3D7n5Mj8x3NdO8xFit7dT9a245TvaoYQ7KgmqpSg/ScKCw4c3eiLava+J
+3btnJeSIU+8ZXq9XjPRpKwUCgYA7z6LiOQKxNeXH3qHXcnHok855maUj5fJNpPbY
+iDkyZ8ySF8GlcFsky8Yw6fWCqfG3zDrohJ5l9JmEsBh7SadkwsZhvecQcS9t4vby
+9/8X4jS0P8ibfcKS4nBP+dT81kkkg5Z5MohXBORA7VWx+ACohcDEkprsQ+w32xeD
+qT1EvQKBgQDKm8ws2ByvSUVs9GjTilCajFqLJ0eVYzRPaY6f++Gv/UVfAPV4c+S0
+kAWpXbv5tbkkzbS0eaLPTKgLzavXtQoTtKwrjpolHKIHUz6Wu+n4abfAIRFubOdN
+/+aLoRQ0yBDRbdXMsZN/jvY44eM+xRLdRVyMmdPtP8belRi2E2aEzA==
+-----END RSA PRIVATE KEY-----
+bandit13@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+                                                                                            ┌──(kali㉿kali)-[~]
+└─$ nano llave14
+
+┌──(kali㉿kali)-[~]
+└─$ ls -all llave14
+-rw-r--r-- 1 kali kali 1679 Sep 25 13:24 llave14
+                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ chmod 600 llave14
+                                                                                                    
+┌──(kali㉿kali)-[~]
+└─$ ls -all llave14  
+-rw------- 1 kali kali 1679 Sep 25 13:24 llave14
+
+┌──(kali㉿kali)-[~]
+└─$ ssh -i llave14  bandit14@bandit.labs.overthewire.org -p 2220
+
+bandit14@bandit:~$ ls -al
+total 24
+drwxr-xr-x  3 root root 4096 Apr 23 18:04 .
+drwxr-xr-x 70 root root 4096 Apr 23 18:05 ..
+-rw-r--r--  1 root root  220 Jan  6  2022 .bash_logout
+-rw-r--r--  1 root root 3771 Jan  6  2022 .bashrc
+-rw-r--r--  1 root root  807 Jan  6  2022 .profile
+drwxr-xr-x  2 root root 4096 Apr 23 18:04 .ssh
+bandit14@bandit:~$ cd .ssh
+bandit14@bandit:~/.ssh$ cat authorized_keys
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDGSQ4TzdbZw5PshaEVz1o9ppCZAN2DO5cK/6mlkdr75u5KQ36CDS1yvsXDw0sZrn5TN5zasSDRaZ568HXcAihinQxnIROrjq36OT2m43BnAi31eAFm58a1kTBZsVbD+9Us3A5cF7hRZK0ZFbOA+kR5K/lNvVWMtkgF0amFMgrbYCbPpltOEyyIyfIlp8TAn9Pw9A7ebJL3W9QcS6g4wDOhQgPiQ3QwRnf5dqHIrQclWrrwqxU5t59cbW+8DcYAnb2TElqq9F+BiepmvJY3vDcIeM1Thz/YmSn6fwvRKfFo0D5ZgDuOI/JMXSKzy7MyVhDiXUvOH/z8ym+EJAXyvbZ3 rudy@localhost
+bandit14@bandit:~/.ssh$ cd -
+/home/bandit14
+bandit14@bandit:~$ cat /etc/bandit_pass/bandit14
+fGrHPx402xGC7U7rXKDaxiWFTOiF0ENq
+bandit14@bandit:~$ id
+uid=11014(bandit14) gid=11014(bandit14) groups=11014(bandit14)
+bandit14@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+

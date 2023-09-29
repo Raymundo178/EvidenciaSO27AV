@@ -1,0 +1,19 @@
+ssh bandit32@bandit.labs.overthewire.org -p 2220
+
+
+
+So everything we type seems to be made uppercase which is not the usual case in terminal shell.
+
+The only things in Linux that are uppercase is variables. Specifically, the variable $0 has a reference to a shell. You can see this with echo $0 on your machine.
+
+$whoami
+bandit33
+
+wow, that means this sh is owned by bandit33
+so print the pass form etc/bandit_pass/bandit33
+
+$cat /etc/bandit_pass/bandit33
+odHo63fHiFqcWWJG9rLiLDtPm45KzUKy
+
+
+voila! this is the last level and to check whether you are correct or not, try to log in to bandit33

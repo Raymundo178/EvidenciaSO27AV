@@ -1,0 +1,9 @@
+bandit1@bandit:~$ ls
+readme
+bandit1@bandit:~$ cat readme
+
+NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL
+
+bandit1@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.

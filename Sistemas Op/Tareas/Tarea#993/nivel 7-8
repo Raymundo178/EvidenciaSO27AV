@@ -1,0 +1,15 @@
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+
+
+bandit7@bandit:~$ ls
+data.txt
+bandit7@bandit:~$ map grep
+Command 'map' not found, but there are 29 similar ones.
+bandit7@bandit:~$ man grep
+bandit7@bandit:~$ cat data.txt | grep millionth
+millionth       TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+bandit7@bandit:~$ grep millionth data.txt
+millionth       TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+bandit7@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.

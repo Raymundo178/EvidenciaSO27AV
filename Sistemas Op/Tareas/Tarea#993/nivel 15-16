@@ -1,0 +1,142 @@
+ssh bandit15@bandit.labs.overthewire.org -p 2220
+
+bandit15@bandit:~$ man openssl
+bandit15@bandit:~$ man s-client
+No manual entry for s-client
+bandit15@bandit:~$ man s_client
+bandit15@bandit:~$ openssl s_client -connect localhost:30001
+CONNECTED(00000003)
+Can't use SSL_get_servername
+depth=0 CN = localhost
+verify error:num=18:self-signed certificate
+verify return:1
+depth=0 CN = localhost
+verify error:num=10:certificate has expired
+notAfter=Sep 26 18:07:58 2023 GMT
+verify return:1
+depth=0 CN = localhost
+notAfter=Sep 26 18:07:58 2023 GMT
+verify return:1
+---
+Certificate chain
+ 0 s:CN = localhost
+   i:CN = localhost
+   a:PKEY: rsaEncryption, 2048 (bit); sigalg: RSA-SHA1
+   v:NotBefore: Sep 26 18:06:58 2023 GMT; NotAfter: Sep 26 18:07:58 2023 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDCzCCAfOgAwIBAgIELFkTFjANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDDAls
+b2NhbGhvc3QwHhcNMjMwOTI2MTgwNjU4WhcNMjMwOTI2MTgwNzU4WjAUMRIwEAYD
+VQQDDAlsb2NhbGhvc3QwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDW
+m165s0qSLm1VyZcskNfFAyDUYQSODehGohZtXm4AcmKh0m9/PGQeJk65SIfwn5nS
+NNwT21iWC4XMZZoVC0ueQ85im6ofe8X3MFPTEVZq3BHyA6qDJlegQP+D8uzVlxhC
+3N7dvuRnD4DTcQI3jkUHCsCeISyq8YNbO396OxIJk7m+C8UrALrcYej/eZCXDYCz
+pV0/QPdiqmbsG+14xOJ3gzs5tVLbCcJs+2se+MyfSHmuE8LXP4pjXjMiFuLYwCeA
+QL0x/4fXf5z55y49hI97tKbrJrFzrNMu9sT0jgJu/NCF/oILbbBLxI7DBvmHqc+0
+M3xQxzlbd70ZgzJJ9tetAgMBAAGjZTBjMBQGA1UdEQQNMAuCCWxvY2FsaG9zdDBL
+BglghkgBhvhCAQ0EPhY8QXV0b21hdGljYWxseSBnZW5lcmF0ZWQgYnkgTmNhdC4g
+U2VlIGh0dHBzOi8vbm1hcC5vcmcvbmNhdC8uMA0GCSqGSIb3DQEBBQUAA4IBAQCg
+6ZqX5khCMSDCDVZ/qWwi9/VMIPUmXdb60n03S7bHZzHZWA6gVbWK1TNxEYgjYqPp
+L7xE+P+w8nLUqgl0Fbptc4rmUc+m8s+z5VWFbfi1kO6AWug4/6RDr5WefJigmkDO
+t6ETFqxh+cDhr42uqDO0rPlUhHjr5ThxkoJ4CixKvraZwRuEEM/dbusKLGDXwNWU
+rGFxDEZ+zlgzPfi3SqBGlELvZ5QcJWxBgawe0/6aMaOdP6WfxVb1Vtin3fsK35y/
+Hfwsr88ft3VjILAEjgFXs494GL4/y7x7y7G4erVcN5n50rGCF5GY39Vts1rgaGxc
+S9uG+RblTBhU4ECwLGsT
+-----END CERTIFICATE-----
+subject=CN = localhost
+issuer=CN = localhost
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA-PSS
+Server Temp Key: X25519, 253 bits
+---
+SSL handshake has read 1339 bytes and written 373 bytes
+Verification error: certificate has expired
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 10 (certificate has expired)
+---
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: 8424639E24839E9A3084F29426D653181212DB322126B82555DF4C2A01A60C9B
+    Session-ID-ctx: 
+    Resumption PSK: C6A14835E686B991BF60AC1ADE0B8CE3F6191BC6A006ECF602DD20C8B19E9B6ABB902867467079A49A8A1AEFF761510C
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - b9 d7 86 f8 fc f7 95 e1-1a a9 5d cc 66 dc a6 be   ..........].f...
+    0010 - 9b cf ea 14 7f 64 42 73-46 75 23 fb 60 94 2e dc   .....dBsFu#.`...
+    0020 - fc 1d c7 dd 4f 48 a9 6d-c0 d6 81 a3 ca 61 00 7b   ....OH.m.....a.{
+    0030 - eb a0 b5 85 ba cc 9c b8-c7 1c 45 71 01 53 81 bf   ..........Eq.S..
+    0040 - 5c a5 cc 85 b4 b1 3d 77-0e 9e 2d ef 21 ad 10 9b   \.....=w..-.!...
+    0050 - 1c f0 11 e7 84 a6 e0 61-c3 7c 1a 9a 11 78 f6 44   .......a.|...x.D
+    0060 - 59 de 3a f0 99 bd 5d 69-ed 3d 27 ec b4 3d c4 4a   Y.:...]i.='..=.J
+    0070 - 5e f1 27 41 bd 01 8b dc-fc 8e c1 ce ad db 50 5d   ^.'A..........P]
+    0080 - 51 1f 67 5d be dd 71 c9-68 3d 5a 50 fa 6e fd 82   Q.g]..q.h=ZP.n..
+    0090 - e9 40 62 c3 5f 4c 70 e3-eb c7 55 76 07 1c 64 10   .@b._Lp...Uv..d.
+    00a0 - 8d 6d ee de 10 e4 a2 cf-45 99 2a 97 1e 4c 36 57   .m......E.*..L6W
+    00b0 - 3b 29 f9 ef 0c fc 9d 4f-c3 d7 fd 58 3b a4 0b 8e   ;).....O...X;...
+    00c0 - 17 b7 69 95 3b 49 4a e6-d3 b2 a8 22 98 49 9c 1a   ..i.;IJ....".I..
+
+    Start Time: 1695762802
+    Timeout   : 7200 (sec)
+    Verify return code: 10 (certificate has expired)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: 9B614EBB19E7958AC4343085C0C627CEC59EED1A120DD13FEEE4049A3FC82F82
+    Session-ID-ctx: 
+    Resumption PSK: 277F48CC2D5B09BDD67868B75A02BBB2221B414D13C47FDBD0CDC72FE16EA232E26CD8C7FD0FF717E32A058069499217
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - b9 d7 86 f8 fc f7 95 e1-1a a9 5d cc 66 dc a6 be   ..........].f...
+    0010 - 3b c5 4c b0 e9 bc 0f ac-68 7f e4 63 c8 bb 82 8a   ;.L.....h..c....
+    0020 - 0b a7 ca f1 0e 4f 0c 1b-08 5d 1d 63 0a 22 88 24   .....O...].c.".$
+    0030 - 3f 4a a7 07 bc d5 41 f2-82 be 7d 23 09 e4 c9 7b   ?J....A...}#...{
+    0040 - d0 29 97 7e dc a7 15 14-96 29 42 45 03 4b de 30   .).~.....)BE.K.0
+    0050 - 34 a3 eb 14 78 30 4c e6-d9 09 f7 cd 30 50 e0 c6   4...x0L.....0P..
+    0060 - 45 d6 b7 74 db 1b 40 f8-27 d5 5f 1c d1 6a 44 53   E..t..@.'._..jDS
+    0070 - 0c 19 e9 71 e0 d6 a4 2e-ce c3 b4 33 dc e3 8b 78   ...q.......3...x
+    0080 - 8e bc d1 50 d0 f5 7f 45-fb d9 48 4f d8 63 5a 86   ...P...E..HO.cZ.
+    0090 - 81 28 c7 9f 59 8b 7a a0-de 48 d5 88 52 b3 2a 15   .(..Y.z..H..R.*.
+    00a0 - bb 15 a0 11 32 b8 82 ae-ae 71 e8 05 8b f8 6e ff   ....2....q....n.
+    00b0 - d5 0c 1e b8 19 3c c0 11-ae 0b 56 46 0c 23 35 d4   .....<....VF.#5.
+    00c0 - a6 6d 37 70 48 81 cb d5-a6 7e d0 32 18 8a 9e 19   .m7pH....~.2....
+
+    Start Time: 1695762802
+    Timeout   : 7200 (sec)
+    Verify return code: 10 (certificate has expired)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+Correct!
+JQttfApK4SeyHwDlI9SXGR50qclOAil1
+
+closed
+bandit15@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.

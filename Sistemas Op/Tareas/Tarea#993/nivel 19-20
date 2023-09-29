@@ -1,0 +1,22 @@
+ssh bandit19@bandit.labs.overthewire.org -p 2220
+
+./bandit20-do
+
+OUTPUT: Run a command as another user.
+  		Example: ./bandit20-do id
+
+./bandit20-do whoami
+output: bandit20
+
+./bandit20-do id
+output: uid=11019(bandit19) gid=11019(bandit19) euid=11020(bandit20) groups=11019(bandit19)
+
+ls -l ./bandit20-do 
+-rw[s]r-x---  1 bandit20 bandit19 14872 Sep  1 06:30 bandit20-do
+
+the 's' means this file can be executed by an escelated user.
+
+how to run  a setuid binary
+
+./bandit20-do cat /etc/bandit_pass/bandit20
+VxCazJaVykI6W36BkBU0mJTCM8rR95XT

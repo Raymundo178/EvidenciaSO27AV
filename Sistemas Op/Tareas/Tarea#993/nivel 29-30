@@ -1,0 +1,27 @@
+ssh bandit29@bandit.labs.overthewire.org -p 2220
+
+download the git repo first, just like previous level. DON'T FORGET TO PUT THE PORT NUMBER
+
+bandit29@bandit:/tmp/tmp.gLklDEvFBc$ git clone ssh://bandit29-git@localhost:2220/home/bandit29-git/repo
+
+cd repo
+
+git log and git status all are ok.. there's no leak.
+BUT, there might other branches that leaks the info
+
+bandit29@bandit:/tmp/tmp.gLklDEvFBc/repo$ git branch -a
+
+you might see there is another branch 'dev'
+
+bandit29@bandit:/tmp/tmp.gLklDEvFBc/repo$ git checkout dev
+
+bandit29@bandit:/tmp/tmp.gLklDEvFBc/repo$ ls
+code  README.md
+
+But both have nothing. We might guess that the leak is in the initial commits
+
+bandit29@bandit:/tmp/tmp.gLklDEvFBc/repo$ git log
+bandit29@bandit:/tmp/tmp.gLklDEvFBc/repo$ git show 2b1395f00cfb986163082c50100be5be8f249f64
+
+
+xbhV3HpNGlTIdnjUrdAlPzc2L6y9EOnS
