@@ -1,11 +1,3 @@
-Con la forma anterior, no podemos iniciar sesión debido a que basrc se modificó de esta manera.
-Necesitamos ejecutar comandos remotos mientras realizamos SSH.
-
-ssh bandit18@bandit.labs.overthewire.org -p 2220 cat readme
-awhqfNnAbc1naukrpqDYcF95h7HoMTrC
-
-Otra forma: SSH con --norc, lo que significa ejecutar el comando sin llamar a ./bashrc inicialmente
-
 ssh bandit18@bandit.labs.overthewire.org -p 2220 /bin/bash --norc
 
 bandit16@bandit:~$ ls  
