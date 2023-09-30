@@ -1,16 +1,10 @@
 ssh bandit27@bandit.labs.overthewire.org -p 2220
 
-you can't clone the git repo on bandit27'd home.
-
-create a folder in /tmp
-
 mkdir foo
 
 cd /tmp/foo
 
 bandit27@bandit:/tmp/foo$ git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
-
-Previous line will not work. You have to specify port no which is 2220 as bandits are active on this port
 
 bandit27@bandit:/tmp/foo$ git clone ssh://bandit27-git@localhost:2220/home/bandit27-git/repo
 
