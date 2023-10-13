@@ -1,0 +1,63 @@
+#!bin/bash
+SCRIPT=""
+
+while true
+do
+
+echo" __  __ _____ _   _ _   _      __  
+|  \/  | ____| \ | | | | |     \ \ 
+| |\/| |  _| |  \| | | | |    (_) |
+| |  | | |___| |\  | |_| |     _| |
+|_|  |_|_____|_| \_|\___/     (_) |
+                               /_/"
+
+	echo -e "1.- HOLA MUNDO"
+	echo -e "2.- Hola mundo con variables"
+	echo -e "3.- Arbol"
+	echo -e "x.- SALIR"
+	
+	echo -n "SELECCIONE UN SCRIPT:"
+	read SCRIPT
+	
+	case ${SCRIPT} in
+		1)
+			source holamundo.sh
+			;;
+		2)
+			source holavariable.sh
+			;;
+		3)
+			source arbol.sh
+			;;
+		x)
+			break
+			;;
+		*)
+			echo "Esta opcion no Existe"
+			;;
+	esac
+done
+----------------------------------------------------------------------------------------------
+#!bin/bash
+
+mkdir uno
+mkdir dos
+mkdir tres
+mkdir seis
+touch uno/test.txt
+touch tres/file3.txt
+mkdir tres/cuatro
+mkdir tres/cuatro/cinco
+touch seis/holamundo.sh
+----------------------------------------------------------------------------------------------
+#!bin/bash
+Nombre = ""
+
+echo "Escriba un nombre: "
+read Nombre
+
+echo "HOLA $Nombre"
+----------------------------------------------------------------------------------------------
+#!bin/bash
+
+echo "HOLA A TODO EL MUNDO"

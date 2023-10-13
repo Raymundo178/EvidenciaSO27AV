@@ -1,8 +1,21 @@
 ssh bandit20@bandit.labs.overthewire.org -p 2220
 
-man nc
+first just run the setuid binary to get the usage:
+
+we have to open a server (on localhost with any random port no)
+
 nc -lvp 4040
 
+-l == server is listening for tcp/udp
+-v == will have a verbose output
+-p == port no
+
+go to another window of terminal and run the binary file to connect to the server 
+
 ./suconnect 4040
+
+Then put the current password on the listening port of 4040
+then setuid binary will reply the correct output.
+
 
 NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
