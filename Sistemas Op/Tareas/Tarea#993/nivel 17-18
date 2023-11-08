@@ -1,6 +1,0 @@
-ssh bandit17@bandit.labs.overthewire.org -p 2220
-
-bandit16@bandit:~$ diff passwords.new passwords.old
-
-hga5tuuCLF6fFzUpnagiMN8ssu9LFrtg
-
